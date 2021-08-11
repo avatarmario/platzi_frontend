@@ -1,0 +1,4 @@
+🐰 conejo 
+🐶 perro 
+🐄 vaca
+🐸 sapo

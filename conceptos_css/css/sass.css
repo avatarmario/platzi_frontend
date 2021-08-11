@@ -1,3 +1,16 @@
-p {
-  color: red;
+.caja {
+  width: 20px;
+  height: 20px;
+  padding: 20px;
+  margin: 10px;
+  background-color: #7FC8A9;
+  border: 2px solid #444941;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.caja2 {
+  width: 30px;
+  height: 30px;
+  background-color: #D5EEBB;
 }

@@ -1,3 +1,37 @@
-p {
-    color: red;
+// p:first-child {
+//     color: pink;
+// }
+
+// p:last-child {
+//     color: brown;
+// }
+
+// p:nth-child(2n) {
+//     color: red;
+// } 
+
+// p:nth-child(2n+1) {
+//     color: blue;
+// } pseudo-clases
+
+// p::first-letter {
+//     color: red;
+//     font-size: 20px;
+// } pseudo-elementos
+
+////////////////clase modelo de caja///////////////////
+.caja {
+    width: 20px;
+    height: 20px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #7FC8A9;
+    border: 2px solid #444941;
+    box-sizing: border-box;
+}
+
+.caja2 {
+    width: 30px;
+    height: 30px;
+    background-color: #D5EEBB;
 }
