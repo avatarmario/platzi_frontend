@@ -1,0 +1,27 @@
+//////////////// SEARCH BOX /////////////////////
+
+.main {
+    height: 300px;
+    &__title {
+        font-size: 2.5rem;
+        color: $color-claro;
+    }
+}
+
+.input {
+    width: 70%;
+    height: 50px; 
+    padding: 0 20px;
+    border: 2px solid $color-claro;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-family: $primary-font;
+    font-size: 1.6rem;
+    outline: none;
+
+}
+
+::placeholder {
+    color: $color-claro;
+}

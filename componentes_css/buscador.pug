@@ -1,0 +1,39 @@
+doctype html 
+html(lang = "es")
+    head   
+        meta(charset = "utf-8")
+        meta(name = "description" , content = "no sé jaja")
+        meta(name = "viewport" , content = "width=device-width, initial-scale=1.0")
+        link(rel = "stylesheet" , href = "css/style.css")
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;500;700&display=swap" rel="stylesheet")
+        title componentes 
+    body 
+        header.header 
+            img.header__img(src= "https://raw.githubusercontent.com/platzi/PlatziVideo/feature/react/src/assets/static/logo-platzi-video-BW2.png", alt="logo de platzi.com") 
+            .header__menu
+                .header__menu--perfil 
+                    img(src = "../imagenes/user-icon.png", alt = "profile button")
+                    p Perfil
+                ul 
+                    li: a(href="#") Cuenta
+                    li: a(href="#") Cerrar Sesión
+
+        main 
+            section.main 
+                h2.main__title ¿Qué quieres ver hoy?
+                input.input(type="text", placeholder="Buscar...")
+            section.carousel
+                .carousel__container 
+                    .carousel-item
+                        img.carousel-item__img(src="https://images.pexels.com/photos/3404474/pexels-photo-3404474.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="people")
+                        .carousel-item__details
+                        div
+                            img(src="/imagenes/play-icon.png", alt="play")
+                            img(src="imagenes/plus-icon.png", alt="pause")
+                        p.carousel-item__details--title Título Descriptivo
+                        p.carousel-item__details--subtitle 2019 16+ 114 minutos
+
+                    .carousel-item
+        footer

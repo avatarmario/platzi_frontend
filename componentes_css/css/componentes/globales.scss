@@ -1,0 +1,15 @@
+/////////// COLORS ////////////////////////
+$color-fondo: #8F57FD;
+$color-claro: white;
+///////// FONTS /////////////////
+$primary-font: 'Mulish', sans-serif;
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    background-color: $color-fondo;
+    font-family: $primary-font;
+}
