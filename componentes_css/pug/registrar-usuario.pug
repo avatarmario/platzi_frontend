@@ -1,0 +1,19 @@
+doctype html 
+html(lang="es")
+    include head.pug
+        meta(name="description", content="Regristrate en nuestra página web")
+        link(rel="stylesheet", href="../css/style-registrar-usuario.css")
+        title Registro
+    body 
+        include header.pug 
+        main
+            section.sign-up
+                section.sign-up__container 
+                    h2 Regístrate 
+                    form.sign-up__container--form
+                        input(class="input" type="text" placeholder="Nombre")
+                        input(class="input" type="email" placeholder="Correo")
+                        input(class="input" type="password" placeholder="Contraseña")
+                        button(class="button") Registrarme
+                    a(href="/") Iniciar Sesión
+        include footer.pug
