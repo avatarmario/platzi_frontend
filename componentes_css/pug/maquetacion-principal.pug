@@ -1,0 +1,27 @@
+doctype html 
+html(lang="es")
+    include head.pug 
+        meta(name="description", content="Chequense estos videoos")
+        link(rel = "stylesheet", href="../css/style-maquetacion-principal.css")
+        title Platzi Video
+    body 
+        include header.pug
+        main
+            section.main 
+                h2.main__title ¿Qué quieres ver hoy?
+                input.input(type="text", placeholder="Buscar...")
+            h2.categories__title Mi lista
+            section.carousel
+                .carousel__container 
+                    .carousel-item
+                        img.carousel-item__img(src="https://images.pexels.com/photos/3404474/pexels-photo-3404474.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="people")
+                        .carousel-item__details
+                            div
+                                img(src="/imagenes/play-icon.png", alt="play")
+                                img(src="/imagenes/plus-icon.png", alt="pause")
+                            p.carousel-item__details--title Título Descriptivo
+                            p.carousel-item__details--subtitle 2019 16+ 114 minutos
+
+            
+        
+        include footer.pug
