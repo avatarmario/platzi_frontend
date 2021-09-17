@@ -1,3 +1,10 @@
+mixin carousel-details(description, yearandlength)
+    .carousel-item__details
+        div
+            img(src="/imagenes/play-icon.png", alt="play")
+            img(src="/imagenes/plus-icon.png", alt="pause")
+        p.carousel-item__details--title=description
+        p.carousel-item__details--subtitle=yearandlength
 doctype html 
 html(lang="es")
     include head.pug 
@@ -21,7 +28,29 @@ html(lang="es")
                                 img(src="/imagenes/plus-icon.png", alt="pause")
                             p.carousel-item__details--title Título Descriptivo
                             p.carousel-item__details--subtitle 2019 16+ 114 minutos
-
+                    .carousel-item
+                        .carousel-item__details
+                            div
+                                img(src="/imagenes/play-icon.png", alt="play")
+                                img(src="/imagenes/plus-icon.png", alt="pause")
+                            p.carousel-item__details--title Título Descriptivo
+                            p.carousel-item__details--subtitle 2019 16+ 114 minutos
+                    .carousel-item
+                        +carousel-details("Description","2019 16+ 114 minutos")
+                    .carousel-item
+                        +carousel-details("Description","2019 16+ 114 minutos")
+                    .carousel-item
+                        +carousel-details("Description","2019 16+ 114 minutos")
+                    .carousel-item
+                        +carousel-details("Description","2019 16+ 114 minutos")
+                    .carousel-item
+                        +carousel-details("Description","2019 16+ 114 minutos")
+                    .carousel-item
+                        +carousel-details("Description","2019 16+ 114 minutos")
+                    .carousel-item
+                        +carousel-details("Description","2019 16+ 114 minutos")
+                    .carousel-item
+                        +carousel-details("Description","2019 16+ 114 minutos")
             
         
         include footer.pug
