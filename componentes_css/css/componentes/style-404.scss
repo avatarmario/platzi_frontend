@@ -1,0 +1,48 @@
+$color-fondo: #21C08B;
+
+.header {
+    background-color: $color-fondo;
+}
+
+.main {
+    height: calc(100vh - 180px);
+    width: 100%;
+    background: linear-gradient($color-fondo, #AB88FF);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .message {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        h1 {
+            color: white;
+            font-size: 18.2rem;
+        }
+        .animated {
+            animation-duration: 2.5s;
+            animation-fill-mode: both;
+            animation-iteration-count: infinite;
+        }
+
+        .pulse {
+            animation-name: pulse;
+            animation-duration: 1s;
+        }
+
+        @keyframes pulse {
+            0% {transform: scale(1); }
+            50% {transform: scale(1.1); }
+            100% {transform: scale(1); }
+        }
+
+        p {
+            color: white;
+            font-size: 1.6rem;
+        }
+    }
+
+}

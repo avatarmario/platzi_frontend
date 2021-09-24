@@ -9,9 +9,9 @@ html(lang="es")
         main
             section.login 
                 section.login__container    
-                    h2 Iniciar Sesión
+                    h2(tabindex="0") Iniciar Sesión
                     form.login__container--form
-                        input(class="input" type="text" placeholder="correo")
+                        input(aria-label="correo" class="input" type="text" placeholder="correo")
                         input(class="input" type="password" placeholder="contraseña")
                         button(class="button") Iniciar Sesión
                         div.login__container--remember-me
